@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T;
+    cin>>T;
+    for(int j=0;j<T;j++)
+    {int N,max1=0,max2=0,s1=0,s2=0;
+    cin>>N;
+    int A[N],B[N];
+    for(int i=0;i<N;i++)
+    {
+        cin>>A[i];max1=max(max1,A[i]);
+        s1=s1+A[i];
+    }
+     for(int i=0;i<N;i++)
+    {
+        cin>>B[i];max2=max(max2,B[i]);
+        s2=s2+B[i];
+    }
+    if((s1-max1)<(s2-max2))
+        cout<<"Alice"<<endl;
+    else
+        if((s1-max1)==(s2-max2))
+        cout<<"Draw"<<endl;
+    else
+        cout<<"Bob"<<endl;}
+    return 0;
+}
