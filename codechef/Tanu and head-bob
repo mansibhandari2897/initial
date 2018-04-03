@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int t,c,d,e,n;
+    cin>>t;
+    for(int i=0;i<t;i++)
+    {
+        cin>>n;char str[n];c=0;d=0;e=0;
+        cin>>str;
+        for(int j=0;str[j]!=NULL;j++)
+        {
+            if(str[j]=='Y')
+                c++;
+            else if(str[j]=='N')
+            d++;
+            else
+                e++;
+        }
+        if(c==0)
+        {
+            if(e==0)
+                cout<<"NOT SURE"<<endl;
+            else
+                cout<<"INDIAN"<<endl;
+        }
+        else
+            if(e==0)
+            cout<<"NOT INDIAN"<<endl;
+    }
+}
