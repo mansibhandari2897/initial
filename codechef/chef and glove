@@ -1,0 +1,21 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    c=0
+    d=0
+    li=[int(j) for j in input().split()]
+    gi=[int(j) for j in input().split()]
+    gr=[x for x in gi[ : :-1]]
+    for k in range(n):
+        if gi[k]>=li[k]:
+            c=c+1
+        if gr[k]>=li[k]:
+            d=d+1
+    if c==n and d==n:
+        print("both \n")
+    elif c==n and d!=n:
+        print("front \n")
+    elif c!=n and d==n:
+        print("back \n")
+    else:
+        print("none \n")
