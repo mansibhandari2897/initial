@@ -1,0 +1,18 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main()
+{
+
+    vector<long> v;
+    int a,i,k,n;cin>>n>>k;long s=0;
+    for(i=0;i<n;i++)
+    { cin>>a;
+        v.push_back(a);}
+    sort(v.begin(),v.end());
+    for(i=n-1;i>=0;i--)
+        s=s+(((n-1-i)/k)+1)*v[i];
+    cout<<s;
+    return 0;
+}
