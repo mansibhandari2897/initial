@@ -1,0 +1,16 @@
+n=int(input())
+for i in range(n):
+    ls=[int(j) for j in input().split()]
+    b=ls.count(1)
+    if b==0:
+        print("Beginner \n")
+    elif b==1:
+        print("Junior Developer \n")
+    elif b==2:
+        print("Middle Developer \n")
+    elif b==3:
+        print("Senior Developer \n")
+    elif b==4:
+        print("Hacker \n")
+    else:
+        print("Jeff Dean \n")
