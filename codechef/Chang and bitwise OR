@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+    d=0
+    n=int(input())
+    s = [int(j) for j in input().split()]
+    for k in s:
+        d=d|k
+    print(d,"\n")
+
