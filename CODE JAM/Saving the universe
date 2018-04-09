@@ -1,0 +1,59 @@
+#include<iostream>
+#include<string>
+#include<fstream>
+using namespace std;
+long count(string s)
+{
+    long strength=1,damage=0;int ll=s.length();
+    for(int i=0;i<ll;i++)
+    {
+        if(s[i]=='C')
+            strength=strength*2;
+        else
+            damage=strength+damage;
+    }
+    return damage;
+}
+int main()
+{
+    int t;long d;cin>>t;string p;
+
+   for(int k=1;k<=t;k++)
+    {
+        cin>>d;getline(cin,p);int a,f=0,M=0;
+        int l=p.length();
+        if(l>=2)
+        {long da=count(p);
+        while(d<da)
+        {
+           a=0;
+
+            for(int i=l-1;i>=1;i--)
+            {
+                if(p[i]=='S' && p[i-1]=='C')
+                {
+                    p[i]='C';
+                    p[i-1]='S';M++;
+
+
+                    a=1;
+                    da=count(p);break;
+                }
+
+            else
+                if(i==1)
+                  {f=1;}
+        }
+        if(f==1)
+            break;
+        }
+        if(a!=0)
+            cout<<"Case #"<<k<<": "<<M<<endl;
+        else
+            cout<<"Case #"<<k<<": "<<"IMPOSSIBLE"<<endl;}
+            else
+                cout<<"Case #"<<k<<": "<<0<<endl;
+
+    }
+
+    }
