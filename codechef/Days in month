@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int t,w;cin>>t;string s;
+    while(t>0)
+    {
+       cin>>w>>s;int a[7]={4,4,4,4,4,4,4};int f;
+       int r= w%7;
+       if(s=="mon")
+        f=0;
+       else
+        if(s=="tues")
+        f=1;
+       else
+        if(s=="wed")
+        f=2;
+       else
+        if(s=="thurs")
+        f=3;
+       else
+        if(s=="fri")
+        f=4;
+       else
+        if(s=="sat")
+        f=5;
+       else
+        f=6;
+       for(int i=f;i<f+r;i++)
+        a[i]=a[i]+1;
+       for(int i=0;i<7;i++)
+        cout<<a[i]<<" ";
+       cout<<endl;
+       t--;
+    }
+}
