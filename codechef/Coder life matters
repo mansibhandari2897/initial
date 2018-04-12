@@ -1,0 +1,15 @@
+for t in range(int(input())):
+    ls=[int(j) for j in input().split()]
+    f=0
+    c=0
+    for i in range(30):
+        if(ls[i]==1):
+            c+=1
+        if(c==6):
+            f=1
+            print("#coderlifematters")
+            break;
+        if(ls[i]==0):
+            c=0
+    if(f==0):
+        print("#allcodersarefun")
