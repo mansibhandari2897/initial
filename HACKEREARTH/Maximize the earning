@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s,n,r;int c;
+ 
+    cin>>s;
+    while(s--)
+    {cin>>n>>r;int a[n];c=1;
+    for(int i=0;i<n;i++)
+        cin>>a[i];
+    int x=a[0];
+    for(int i=1;i<n;i++)
+        {if(x<a[i])
+            {c++;x=a[i];}
+           
+            }
+ 
+        cout<<r*c<<endl;}
+ 
+ 
+}
