@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int t,i,f,A,B;cin>>t;
+    while(t--)
+    {
+        cin>>A>>B;f=0;
+        for(i=1; ;i++)
+        {
+            if(i%2!=0)
+            {
+                if(A-i<0)
+                {
+                    f=1;break;
+                }
+                else
+                    A=A-i;
+            }
+            else
+            {
+                if(B-i<0)
+                {
+                    break;
+                }
+                else
+                    B=B-i;
+            }
+        }
+        if(f==1)
+            cout<<"Bob"<<endl;
+        else
+            cout<<"Limak"<<endl;
+    }
+}
