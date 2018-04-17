@@ -1,0 +1,13 @@
+for t in range(int(input())):
+    n,k=[int(j) for j in input().split()]
+    s=0
+    a=[int(j) for j in input().split()]
+    b=[int(j) for j in input().split()]
+    m=max(b)
+    m=m+1
+    for i in range(n):
+        f=a[i]
+        if (a[i] < m):
+            
+            s = s + (m - f)*k
+    print(s)
