@@ -1,0 +1,29 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    int t,n,k,l,u,i;cin>>t;string s;
+    while(t--)
+    {
+        cin>>n>>k;l=0;u=0;
+        cin>>s;
+        for(i=0;s[i]!=NULL;i++)
+        {
+            if(isupper(s[i]))
+                u++;
+            else
+                l++;
+        }
+        if(k>=u && k>=l)
+            cout<<"both"<<endl;
+        else
+            if(k<u && k<l)
+               cout<<"none"<<endl;
+        else
+            if(k<l && k>=u)
+            cout<<"chef"<<endl;
+        else
+            cout<<"brother"<<endl;
+    }
+}
