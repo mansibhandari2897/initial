@@ -1,0 +1,15 @@
+s=input()
+n=int(input())
+ls=[j for j in input().split()]
+for t in ls:
+    l=len(t)
+    f=1
+    for i in range(l):
+        c=s.count(t[i])
+        if(c==0):
+            f=0
+            break
+    if(f==0):
+        print("No")
+    else:
+        print("Yes")
