@@ -1,6 +1,9 @@
 s=input()
 n=int(input())
-ls=[j for j in input().split()]
+ls=[]
+for i in range(n):
+    si=input()
+    ls.append(si)
 for t in ls:
     l=len(t)
     f=1
