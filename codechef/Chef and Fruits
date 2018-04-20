@@ -1,0 +1,16 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+  int t,n,m,k,r;
+  cin>>t;
+  while(t--)
+  {
+   cin>>n>>m>>k;
+   r=abs(n-m)-k;
+   if(r<0)
+    r=0;
+   cout<<r<<endl;
+  }
+}
