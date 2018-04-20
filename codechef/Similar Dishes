@@ -1,0 +1,12 @@
+for t in range(int(input())):
+     la=[j for j in input().split()]
+     lb=[j for j in input().split()]
+     c=0
+     for i in la:
+         for j in lb:
+             if(i==j):
+                 c=c+1
+     if(c>=2):
+        print("similar")
+     else:
+        print("dissimilar")
