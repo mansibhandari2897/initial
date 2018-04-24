@@ -1,0 +1,28 @@
+n=int(input())
+
+t=[]
+a=[]
+ta=[]
+
+ls=[int(x) for x in input().split()]
+lp=[int(x) for x in input().split()]
+for i in range(n):
+    if(lp[i]==1):
+        t.append(ls[i])
+    elif(lp[i]==2):
+        a.append(ls[i])
+    else:
+        ta.append(ls[i])
+t.sort()
+a.sort()
+ta.sort()
+l1=len(t)
+l2=len(a)
+if(l1!=0 and l2!=0):
+  if(ta[0]<t[0]+a[0]):
+     print(ta[0])
+  else:
+    print(t[0]+a[0])
+else:
+    print(ta[0])
+
