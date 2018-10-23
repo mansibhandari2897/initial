@@ -1,0 +1,12 @@
+for t in range(int(input())):
+    n,k=[int(x) for x in input().split()]
+    ls=[int(x) for x in input().split()]
+    i=0
+    f=[]
+    while(i<=n-k):
+        t=[]
+        t=ls[i:i+k]
+        f.append(sum(t))
+        i=i+1
+    f.sort()
+    print(f[len(f)-1])
