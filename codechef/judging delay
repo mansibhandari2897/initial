@@ -1,0 +1,8 @@
+for t in range(int(input())):
+    count=0
+    for n in range(int(input())):
+        ls=[int(x) for x in input().split()]
+        if(abs(ls[0]-ls[1])>5):
+            count=count+1
+    print (count)
+
