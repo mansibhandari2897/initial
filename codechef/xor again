@@ -1,0 +1,8 @@
+for t in range(int(input())):
+    n=int(input())
+    ls=[int(x) for x in input().split()]
+    x=0
+    for j in ls:
+        a=j+j
+        x=x^a
+    print(x)
