@@ -1,0 +1,10 @@
+for t in range(int(input())):
+    a,b,c,x,y=[int(p) for p in input().split()]
+    m=max(a+b,b+c,a+c)
+    if((a+b+c)!=(x+y)):
+        print("NO")
+    else:
+        if(max(x,y)>m):
+            print("NO")
+        else:
+            print("YES")
